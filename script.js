@@ -91,7 +91,7 @@ function calculateAmounts() {
     otherExpenseInputs.forEach(input => totalOtherExpenses += parseFloat(input.value) || 0);
 
     const remainingAmount = totalAdvanceMoney - totalExpense;
-    const netRemainingAmount = remainingAmount + totalOtherExpenses;
+    const netRemainingAmount = remainingAmount - totalOtherExpenses;
 
     document.getElementById('totalAdvanceMoney').textContent = totalAdvanceMoney.toFixed(2);
     document.getElementById('totalExpense').textContent = totalExpense.toFixed(2);
