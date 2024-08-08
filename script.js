@@ -155,15 +155,15 @@ function loadVehicleData(vehicleNumber) {
         billingData.forEach(data => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td><input type="date" value="${data.loadingDate}" name="loadingDate" required></td>
-                <td><input type="date" value="${data.unloadingDate}" name="unloadingDate" required></td>
-                <td><input type="text" value="${data.loadingPoint}" name="loadingPoint" required></td>
-                <td><input type="text" value="${data.unloadingPoint}" name="unloadingPoint" required></td>
-                <td><input type="number" value="${data.advanceMoney}" name="advanceMoney" class="amount" required></td>
-                <td><input type="number" value="${data.expense}" name="expense" class="amount" required></td>
-                <td><button type="button" onclick="removeRow(this)" class="remove">Remove</button></td>
-            `;
-            tableBody.appendChild(row);
+    <td><input type="date" name="loadingDate" required style="width: 120px;"></td>
+    <td><input type="date" name="unloadingDate" required style="width: 120px;"></td>
+    <td><input type="text" name="loadingPoint" required style="width: 100px;"></td>
+    <td><input type="text" name="unloadingPoint" required style="width: 100px;"></td>
+    <td><input type="number" name="advanceMoney" class="amount" required style="width: 100px;"></td>
+    <td><input type="number" name="expense" class="amount" required style="width: 100px;"></td>
+    <td><button type="button" onclick="removeRow(this)" class="remove">Remove</button></td>
+`;
+tableBody.appendChild(row);
         });
         calculateAmounts();
     }
