@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Company Billing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>PNR TRANSPORT SALARY DETAILS</h1>
+</header>
+    <!-- <h1>Transport Company Billing</h1> -->
+    
+    <form id="vehicleForm">
+        <h2>Select Vehicle</h2>
+        <label for="vehicleSelect">Select Vehicle:</label>
+        <select id="vehicleSelect" name="vehicleNumber">
+            <option value="">--Select Vehicle--</option>
+            <option value="TN 28 AJ 7900">TN 28 AJ 7900</option>
+            <option value="TN 88 C 1510">TN 88 C 1510</option>
+            <option value="KA 01 AG 3210">KA 01 AC 3210</option>
+            <option value="KA 01 AH 0210">KA 01 AH 0210</option>
+            <option value="KA 01 AH 4110">KA 01 AH 4110</option>
+            <option value="TN 88 A 8247">TN 88 A 8247</option>
+            <option value="TN 88 C 8510">TN 88 C 8510</option>
+            <option value="KA 01 AG 8610">KA 01 AG 8610</option>
+            <option value="KA 01 AL 9510">KA 01 AL 9510</option>
+            <option value="GJ 12 AU 5480">GJ 12 AU 5480</option>
+            <option value="UP 94 T 6029">UP 94 T 6029</option>
+            <option value="UP 94 T 6036">UP 94 T 6036</option>
+            <option value="UP 94 T 6038">UP 94 T 6038</option>
+            <option value="UP 94 T 6034">UP 94 T 6034</option>
+            <option value="TN 88 C 4587">TN 88 C 4587</option>
+            <option value="TN 88 J 9010">TN 88 J 9010</option>
+            <option value="TN 88 J 9624">TN 88 J 9624</option>
+            <option value="UP 70 JT 8010">UP 70 JT 8010</option>
+            <option value="UP 70 JT 4020">UP 70 JT 4020</option>
+
+        </select>
+    </form>
+
+    <div><div><form id="billingForm">
+        <h2>Billing Details</h2>
+        <table id="billingTable">
+            <thead>
+                <tr>
+                    <th>Loading Date</th>
+                    <th>Unloading Date</th>
+                    <th>Loading Point</th>
+                    <th>Unloading Point</th>
+                    <th>Advance Money</th>
+                    <th>Expense</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="billingTableBody"></tbody>
+        </table>
+        <button type="button" onclick="addRow()">Add Row</button>
+        <button type="button" onclick="calculateAmounts()">Calculate</button>
+        <button type="button" id="saveBillingButton">Save Billing Data</button>
+        <br><br>
+        <div>Total Advance Money: <span id="totalAdvanceMoney">0.00</span></div>
+        <div>Total Expense: <span id="totalExpense">0.00</span></div>
+        <div>Remaining Amount with Driver: <span id="remainingAmount">0.00</span></div>
+        <br>
+    </form>
+</div>
+
+    <form id="expensesForm">
+        <h2>Other Expenses</h2>
+        <table id="expensesTable">
+            <thead>
+                <tr>
+                    <th>Other Expenses</th>
+                    <th>Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="expensesTableBody"></tbody>
+        </table>
+        <button type="button" onclick="addExpenseRow()">Add Row</button>
+        <button type="button" onclick="calculateAmounts()">Calculate</button>
+        <button type="button" id="saveExpensesButton">Save Expenses Data</button>
+        <br><br>
+        <div>Total Other Expenses: <span id="totalOtherExpenses">0.00</span></div>
+        <div>Net Remaining Amount with Driver: <span id="netRemainingAmount">0.00</span></div>
+        <br>
+    </form>
+
+    <form id="salaryForm">
+        <h2>Driver's Monthly Income</h2>
+        <label for="monthlyIncome">Monthly Income:</label>
+        <input type="number" id="monthlyIncome" name="monthlyIncome" required>
+        <br><br>
+        <button type="button" onclick="calculateDriverSalary()">Calculate Driver's Salary</button>
+        <div>Driver's Salary: <span id="driverSalary">0.00</span></div>
+    </form>
+    <button id="screenshotButton" onclick="captureScreenshot()">Export Page as Image</button>
+    <button type="button" id="clearButton">Clear</button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

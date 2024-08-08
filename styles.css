@@ -1,0 +1,235 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #0a0a0a;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #e80000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button.remove {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.remove:hover {
+    opacity: 0.8;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #036903;
+    background-color: #e6ffe6; /* Light green background */
+    border: 2px solid black; /* Black border around the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners for the border */
+    width: 90%; /* Adjust width as needed */
+    margin: 20px auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+#expensesForm {
+    background-color: #e6ffe6; /* Light green background */
+    border: 2px solid black; /* Black border around the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners for the border */
+    width: 90%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the form */
+}
+
+/* Style for the table */
+#expensesTable {
+    width: 90%; /* Full width table */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+#expensesTable th, #expensesTable td {
+    border: 1px solid black; /* Black border for table cells */
+    padding: 10px; /* Padding inside cells */
+}
+
+#expensesTable th {
+    background-color: #004d00; /* Dark green background for headers */
+    color: white; /* White text color for headers */
+}
+
+#expensesTable td {
+    background-color: #e6ffe6; /* Light green background for table cells */
+}
+
+/* Style for buttons */
+button {
+    background-color: #004d00; /* Dark green background for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside buttons */
+    margin: 5px; /* Margin around buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #003300; /* Even darker green on hover */
+}
+
+/* Style for divs displaying totals */
+#expensesForm div {
+    font-size: 16px; /* Font size for totals */
+    color: #004d00; /* Dark green text color for totals */
+    margin-bottom: 10px; /* Margin below totals */
+}
+#vehicleForm, #billingForm {
+    background-color: #e6ffe6; /* Light green background */
+    border: 2px solid black; /* Black border around the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners for the border */
+    width: 90%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the form */
+}
+
+/* Style for the select box */
+#vehicleSelect {
+    padding: 10px; /* Padding inside the select box */
+    border: 1px solid black; /* Black border around the select box */
+    border-radius: 5px; /* Rounded corners for the select box */
+    background-color: #ffffff; /* White background for the select box */
+    color: black; /* Black text color */
+    font-size: 16px; /* Font size */
+}
+
+/* Style for the table */
+#billingTable {
+    width: 90%; /* Full width table */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+#billingTable th, #billingTable td {
+    border: 1px solid black; /* Black border for table cells */
+    padding: 10px; /* Padding inside cells */
+}
+
+#billingTable th {
+    background-color: #004d00; /* Dark green background for headers */
+    color: white; /* White text color for headers */
+}
+
+#billingTable td {
+    background-color: #e6ffe6; /* Light green background for table cells */
+}
+
+/* Style for buttons */
+button {
+    background-color: #004d00; /* Dark green background for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside buttons */
+    margin: 5px; /* Margin around buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #003300; /* Even darker green on hover */
+}
+
+/* Style for divs displaying totals */
+#vehicleForm div, #billingForm div {
+    font-size: 16px; /* Font size for totals */
+    color: #004d00; /* Dark green text color for totals */
+    margin-bottom: 10px; /* Margin below totals */
+}
+/* Style for the form container */
+#salaryForm {
+    background-color: #e6ffe6; /* Light green background */
+    border: 2px solid black; /* Black border around the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners for the border */
+    width: 90%; /* Adjust width as needed */
+    margin: 20px auto; /* Center the form */
+}
+
+/* Style for input fields */
+#monthlyIncome {
+    padding: 10px; /* Padding inside the input field */
+    border: 1px solid black; /* Black border around the input field */
+    border-radius: 5px; /* Rounded corners for the input field */
+    background-color: #ffffff; /* White background for the input field */
+    color: black; /* Black text color */
+    font-size: 16px; /* Font size */
+    width: 90%; /* Adjust width to fit within form */
+}
+
+/* Style for buttons */
+button {
+    background-color: #004d00; /* Dark green background for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside buttons */
+    margin: 5px; /* Margin around buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #003300; /* Even darker green on hover */
+}
+
+/* Style for div displaying salary */
+#salaryForm div {
+    font-size: 16px; /* Font size for salary */
+    color: #004d00; /* Dark green text color for salary */
+    margin-top: 10px; /* Margin above the salary display */
+}
+/* Your existing styles */
+
+#clearButton, #screenshotButton {
+    background-color: #004d00; /* Dark green background for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding inside buttons */
+    margin: 5px; /* Margin around buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    float: right; /* Align buttons to the right */
+}
+
+#clearButton:hover, #screenshotButton:hover {
+    background-color: #003300; /* Even darker green on hover */
+}
