@@ -233,3 +233,14 @@ button:hover {
 #clearButton:hover, #screenshotButton:hover {
     background-color: #003300; /* Even darker green on hover */
 }
+.date-input {
+    width: 120px;
+}
+
+.text-input {
+    width: 100px;
+}
+
+.amount {
+    width: 100px;
+}
